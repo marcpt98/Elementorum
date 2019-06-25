@@ -6,8 +6,7 @@
 #include "ModulePlayer.h"
 #include "ModuleInput.h"
 #include "ModuleFadeToBlack.h"
-#include "ModuleSceneKen.h"
-
+#include "ModuleSceneHonda.h"
 ModuleWelcomeScreen::ModuleWelcomeScreen()
 {
 	Welcomeimage = { 284,369,455,335 };
@@ -46,7 +45,7 @@ update_status ModuleWelcomeScreen::Update()
 	// TODO 2: make so pressing SPACE the KEN stage is loaded
 	if (App->input->keyboard[SDL_SCANCODE_SPACE] == 1)
 	{
-		App->fade->FadeToBlack(App->scene_Welcome,App->scene_ken, 2);
+		App->fade->FadeToBlack(App->scene_Welcome,App->scene_honda, 2);
 	}
 
 	return UPDATE_CONTINUE;
