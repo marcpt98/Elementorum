@@ -50,13 +50,13 @@
     <ClInclude Include="ModuleFadeToBlack.h">
       <Filter>Modules</Filter>
     </ClInclude>
-    <ClInclude Include="ModuleSceneHonda.h">
-      <Filter>Modules</Filter>
-    </ClInclude>
     <ClInclude Include="ModuleWelcomeScreen.h">
       <Filter>Modules</Filter>
     </ClInclude>
     <ClInclude Include="ModuleScenewin.h">
+      <Filter>Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="ModuleFirstlvltest.h">
       <Filter>Modules</Filter>
     </ClInclude>
   </ItemGroup>
@@ -88,13 +88,13 @@
     <ClCompile Include="ModuleFadeToBlack.cpp">
       <Filter>Modules</Filter>
     </ClCompile>
-    <ClCompile Include="ModuleSceneHonda.cpp">
-      <Filter>Modules</Filter>
-    </ClCompile>
     <ClCompile Include="ModuleWelcomeScreen.cpp">
       <Filter>Modules</Filter>
     </ClCompile>
     <ClCompile Include="ModuleScenewin.cpp">
+      <Filter>Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="ModuleFirstlvltest.cpp">
       <Filter>Modules</Filter>
     </ClCompile>
   </ItemGroup>

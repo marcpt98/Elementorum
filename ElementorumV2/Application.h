@@ -9,7 +9,7 @@ class ModuleWindow;
 class ModuleInput;
 class ModuleTextures;
 class ModuleRender;
-class ModuleSceneHonda;
+class ModuleFirstlvltest;
 class ModulePlayer;
 class ModuleFadeToBlack;
 class ModuleWelcomeScreen;
@@ -25,7 +25,7 @@ public:
 	ModuleRender* render;
 	ModuleInput* input;
 	ModuleTextures* textures;
-	ModuleSceneHonda* scene_honda;
+	ModuleFirstlvltest* first_lvl;
 	ModuleWelcomeScreen* scene_Welcome;
 	ModuleScenewin* scene_win;
 	ModulePlayer* player;

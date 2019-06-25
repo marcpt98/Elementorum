@@ -1,5 +1,5 @@
-#ifndef __MODULESCENEHONDA_H__
-#define __MODULESCENEHONDA_H__
+#ifndef __MODULEFIRSTLVLTEST_H__
+#define __MODULEFIRSTLVLTEST_H__
 
 #include "Module.h"
 #include "Animation.h"
@@ -7,11 +7,11 @@
 
 struct SDL_Texture;
 
-class ModuleSceneHonda : public Module
+class ModuleFirstlvltest : public Module
 {
 public:
-	ModuleSceneHonda();
-	~ModuleSceneHonda();
+	ModuleFirstlvltest();
+	~ModuleFirstlvltest();
 
 	bool Start();
 	update_status Update();

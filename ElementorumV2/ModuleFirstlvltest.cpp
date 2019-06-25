@@ -1,6 +1,6 @@
 #include "Globals.h"
 #include "Application.h"
-#include "ModuleSceneHonda.h"
+#include "ModuleFirstlvltest.h"
 #include "ModuleTextures.h"
 #include "ModuleRender.h"
 #include "ModulePlayer.h"
@@ -11,7 +11,7 @@
 
 // Reference at https://youtu.be/6OlenbCC4WI?t=382
 
-ModuleSceneHonda::ModuleSceneHonda()
+ModuleFirstlvltest::ModuleFirstlvltest()
 {
 	// ground
 	background2.x = 0;
@@ -20,11 +20,11 @@ ModuleSceneHonda::ModuleSceneHonda()
 	background2.h = 224;
 }
 
-ModuleSceneHonda::~ModuleSceneHonda()
+ModuleFirstlvltest::~ModuleFirstlvltest()
 {}
 
 // Load assets
-bool ModuleSceneHonda::Start()
+bool ModuleFirstlvltest::Start()
 {
 	LOG("Loading background assets");
 	bool ret = true;
@@ -37,7 +37,7 @@ bool ModuleSceneHonda::Start()
 }
 
 // Load assets
-bool ModuleSceneHonda::CleanUp()
+bool ModuleFirstlvltest::CleanUp()
 {
 	// TODO 5: Remove all memory leaks
 	//SDL_DestroyTexture(graphics);
@@ -47,14 +47,14 @@ bool ModuleSceneHonda::CleanUp()
 }
 
 // Update: draw background
-update_status ModuleSceneHonda::Update()
+update_status ModuleFirstlvltest::Update()
 {
 	// Draw everything --------------------------------------	
 	App->render->Blit(graphics, 0, 0, &background2, 0.75f);
 	// TODO 2: make so pressing SPACE the KEN stage is loaded
 	if (App->input->keyboard[SDL_SCANCODE_SPACE] == 1)
 	{
-		App->fade->FadeToBlack(App->scene_honda, App->scene_win, 2);
+		App->fade->FadeToBlack(App->first_lvl, App->scene_win, 2);
 	}
 
 	return UPDATE_CONTINUE;
