@@ -11,30 +11,57 @@ ModuleCharacterTest::ModuleCharacterTest()
 	position.y = 400;
 
 	// Idle animation 
-	idle.PushBack({ 0, 0, 0, 0 }, 0, 0, 0, 0, 0);
-	idle.PushBack({ 0, 0, 0, 0 }, 0, 0, 0, 0, 0);
-	idle.PushBack({ 0, 0, 0, 0 }, 0, 0, 0, 0, 0);
+	idle.PushBack({ 0, 0, 60, 90 }, 0.1, 0, 0, 0, 0);
+	idle.PushBack({ 61, 0, 60, 87 }, 0.1, 0, 0, 0, 0);
+	idle.PushBack({ 122, 0, 60, 84 }, 0.1, 0, 0, 0, 0);
+	idle.PushBack({ 61, 0, 60, 87 }, 0.1, 0, 0, 0, 0);
 
 	// Walk forward animation
-	forward.PushBack({ 0, 0, 0, 0 }, 0, 0, 0, 0, 0);
-	forward.PushBack({ 0, 0, 0, 0 }, 0, 0, 0, 0, 0);
-	forward.PushBack({ 0, 0, 0, 0 }, 0, 0, 0, 0, 0);
-	forward.PushBack({ 0, 0, 0, 0 }, 0, 0, 0, 0, 0);
+	forward.PushBack({ 0, 91, 60, 90 }, 0.1, 0, 0, 0, 0);
+	forward.PushBack({ 61, 91, 60, 87 }, 0.1, 0, 0, 0, 0);
+	forward.PushBack({ 0, 0, 60, 90 }, 0.1, 0, 0, 0, 0);
+	forward.PushBack({ 122, 91, 60, 90 }, 0.1, 0, 0, 0, 0);
+	forward.PushBack({ 183, 91, 60, 87 }, 0.1, 0, 0, 0, 0);
+	forward.PushBack({ 0, 0, 60, 90 }, 0.1, 0, 0, 0, 0);
 
 	// Walk backward animation
-	backward.PushBack({ 0, 0, 0, 0 }, 0, 0, 0, 0, 0);
-	backward.PushBack({ 0, 0, 0, 0 }, 0, 0, 0, 0, 0);
-	backward.PushBack({ 0, 0, 0, 0 }, 0, 0, 0, 0, 0);
-	backward.PushBack({ 0, 0, 0, 0 }, 0, 0, 0, 0, 0);
+	backward.PushBack({ 0, 91, 60, 90 }, 0.1, 0, 0, 0, 0);
+	backward.PushBack({ 61, 91, 60, 87 }, 0.1, 0, 0, 0, 0);
+	backward.PushBack({ 0, 0, 60, 90 }, 0.1, 0, 0, 0, 0);
+	backward.PushBack({ 122, 91, 60, 90 }, 0.1, 0, 0, 0, 0);
+	backward.PushBack({ 183, 91, 60, 87 }, 0.1, 0, 0, 0, 0);
+	backward.PushBack({ 0, 0, 60, 90 }, 0.1, 0, 0, 0, 0);
 
 	// Jump animation
-	jump.PushBack({ 0, 0, 0, 0 }, 0, 0, 0, 0, 0);
-	jump.PushBack({ 0, 0, 0, 0 }, 0, 0, 0, 0, 0);
-	jump.PushBack({ 0, 0, 0, 0 }, 0, 0, 0, 0, 0);
-	jump.PushBack({ 0, 0, 0, 0 }, 0, 0, 0, 0, 0);
-	jump.PushBack({ 0, 0, 0, 0 }, 0, 0, 0, 0, 0);
-	jump.PushBack({ 0, 0, 0, 0 }, 0, 0, 0, 0, 0);
-	jump.PushBack({ 0, 0, 0, 0 }, 0, 0, 0, 0, 0);
+	jump.PushBack({ 320, 88, 60, 90 }, 0.03, 0, 0, 0, 0);
+
+	// Crouch Animation
+	crouch.PushBack({ 391, 0, 60, 87 }, 0.1, 0, 0, 0, 0);
+	crouch.PushBack({ 452, 0, 60, 75 }, 0.1, 0, 0, 0, 0);
+	crouch.loop = false;
+
+	// Attack animation
+	attack.PushBack({ 0, 270, 96, 93 }, 0.1, 0, 0, 0, 0);
+	attack.PushBack({ 97, 270, 96, 105 }, 0.1, 0, 0, 0, 0);
+	attack.PushBack({ 203, 270, 102, 99 }, 0.1, 0, 0, 0, 0);
+	attack.PushBack({ 306, 270, 96, 99 }, 0.1, 0, 0, 0, 0);
+	attack.PushBack({ 97, 270, 96, 105 }, 0.1, 0, 0, 0, 0);
+	attack.PushBack({ 0, 270, 96, 93 }, 0.1, 0, 0, 0, 0);
+
+	// Damage animation
+	damage.PushBack({ 0, 182, 60, 87 }, 0.2, 0, 0, 0, 0);
+	damage.PushBack({ 61, 182, 63, 87 }, 0.2, 0, 0, 0, 0);
+	damage.PushBack({ 125, 182, 63, 87 }, 0.3, 0, 0, 0, 0);
+	damage.PushBack({ 189, 182, 63, 87 }, 0.3, 0, 0, 0, 0);
+	damage.PushBack({ 125, 182, 63, 87 }, 0.3, 0, 0, 0, 0);
+	damage.PushBack({ 189, 182, 63, 87 }, 0.3, 0, 0, 0, 0);
+	damage.PushBack({ 61, 182, 63, 87 }, 0.2, 0, 0, 0, 0);
+
+	// Die animation
+	die.PushBack({ 0, 376, 72, 84 }, 0.1, 0, 0, 0, 0);
+	die.PushBack({ 73, 376, 99, 54 }, 0.1, 0, 0, 0, 0);
+	die.PushBack({ 173, 376, 93, 48 }, 0.1, 0, 0, 0, 0);
+	die.PushBack({ 267, 376, 90, 21 }, 0.1, 0, 0, 0, 0);
 }
 
 ModuleCharacterTest::~ModuleCharacterTest()
@@ -87,6 +114,18 @@ update_status ModuleCharacterTest::Update()
 	}
 
 	// Jump
+
+
+	// Crouch
+
+
+	// Attack
+
+
+	// Damage
+
+
+	// Die
 
 	//////////////////////////////////////////////////////////////////////
 

@@ -26,6 +26,10 @@ public:
 	Animation forward;
 	Animation backward;
 	Animation jump;
+	Animation crouch;
+	Animation attack;
+	Animation damage;
+	Animation die;
 };
 
 #endif
