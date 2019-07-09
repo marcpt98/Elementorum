@@ -11,6 +11,7 @@ class ModuleInput;
 class ModuleTextures;
 class ModuleLevelTest;
 class ModuleCharacterTest;
+class ModuleCollisions;
 
 class Module;
 class Application
@@ -23,6 +24,7 @@ public:
 	ModuleTextures* textures;
 	ModuleLevelTest* level_test;
 	ModuleCharacterTest* character_test;
+	ModuleCollisions *collisions;
 
 public:
 	Application();

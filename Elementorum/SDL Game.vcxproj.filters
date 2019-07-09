@@ -50,6 +50,9 @@
     <ClInclude Include="ModuleCharacterTest.h">
       <Filter>Modules</Filter>
     </ClInclude>
+    <ClInclude Include="ModuleCollisions.h">
+      <Filter>Modules</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -77,6 +80,9 @@
       <Filter>Modules</Filter>
     </ClCompile>
     <ClCompile Include="ModuleCharacterTest.cpp">
+      <Filter>Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="ModuleCollisions.cpp">
       <Filter>Modules</Filter>
     </ClCompile>
   </ItemGroup>

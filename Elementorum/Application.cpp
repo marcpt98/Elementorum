@@ -5,6 +5,7 @@
 #include "ModuleTextures.h"
 #include "ModuleLevelTest.h"
 #include "ModuleCharacterTest.h"
+#include "ModuleCollisions.h"
 
 Application::Application()
 {
@@ -14,6 +15,7 @@ Application::Application()
 	modules[5] = textures = new ModuleTextures();
 	modules[3] = level_test = new ModuleLevelTest();
 	modules[4] = character_test = new ModuleCharacterTest();
+	modules[5] = collisions = new ModuleCollisions();
 }	
 
 Application::~Application()
