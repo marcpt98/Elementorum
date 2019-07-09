@@ -21,6 +21,7 @@ public:
 
 	SDL_Texture* background = nullptr;
 	SDL_Rect background_size;
+	SDL_Rect ground;
 };
 
 #endif // __MODULELEVELTEST_H__

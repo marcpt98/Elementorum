@@ -13,6 +13,13 @@ ModuleLevelTest::ModuleLevelTest()
 	background_size.y = 0;
 	background_size.w = 1000;
 	background_size.h = 500;
+
+	ground.x = 0;
+	ground.y = 0;
+	ground.w = 0;
+	ground.h = 0;
+
+
 }
 
 ModuleLevelTest::~ModuleLevelTest()

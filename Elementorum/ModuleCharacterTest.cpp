@@ -11,10 +11,10 @@ ModuleCharacterTest::ModuleCharacterTest()
 	position.y = 400;
 
 	// Idle animation 
-	idle.PushBack({ 0, 0, 60, 90 }, 0.1, 0, 0, 0, 0);
-	idle.PushBack({ 61, 0, 60, 87 }, 0.1, 0, 0, 0, 0);
-	idle.PushBack({ 122, 0, 60, 84 }, 0.1, 0, 0, 0, 0);
-	idle.PushBack({ 61, 0, 60, 87 }, 0.1, 0, 0, 0, 0);
+	idle.PushBack({ 0, 0, 60, 90 }, 0.03, 0, 0, 0, 0);
+	idle.PushBack({ 61, 0, 60, 87 }, 0.025, 0, 0, 0, 0);
+	idle.PushBack({ 122, 0, 60, 84 }, 0.015, 0, 0, 0, 0);
+	idle.PushBack({ 61, 0, 60, 87 }, 0.025, 0, 0, 0, 0);
 
 	// Walk forward animation
 	forward.PushBack({ 0, 91, 60, 90 }, 0.1, 0, 0, 0, 0);
