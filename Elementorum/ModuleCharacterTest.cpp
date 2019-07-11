@@ -117,7 +117,10 @@ update_status ModuleCharacterTest::Update()
 
 
 	// Crouch
-
+	if (App->input->keyboard[SDL_SCANCODE_S] == 1)
+	{
+		current_animation = &crouch;
+	}
 
 	// Attack
 

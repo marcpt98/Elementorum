@@ -31,7 +31,7 @@ bool ModuleLevelTest::Start()
 	LOG("LOADING ASSETS LEVEL TEST");
 	bool ret = true;
 
-	background = App->textures->Load("Levels/Background_Level_Test.png");
+	background = App->textures->Load("Levels/Level_Test.png");
 
 	App->character_test->Enable();
 
